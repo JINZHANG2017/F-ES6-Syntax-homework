@@ -1,13 +1,10 @@
-
 function parseData(input){
     const output=[];
     for(let dataItem of input.data){	
         // console.log(item);
         let outputItem={};
-        for(let value of dataItem ){
-            for(let keyItem of input.column){
-                outputItem[keyItem.name]=value;
-            }
+        for(let j=0;j<dataItem.length;j++ ){
+            outputItem[input.column[j].name]=dataItem[j];
         }
         output.push(outputItem);
     }
