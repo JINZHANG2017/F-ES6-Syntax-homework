@@ -18,6 +18,7 @@ const output = [
   { name: "Kevin", age: 22, gender: "Male", birthday: "1998-01-21" },
 ];
 
-test("parse data to expect result", () => {
+
+test("parse data to expect result", () => { 
   expect(parseData(input)).toEqual(output);
 });
